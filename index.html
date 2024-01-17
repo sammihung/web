@@ -7,9 +7,6 @@
     <body>
         <h1 align="center">welcome to our page</h1>
         <hr />
-        <pre>
-            LIHKG
-        </pre>
         <p>Here are some recommended tourist attractions in Shiga:
             <ol>
                 <li><a href="#Lake Biwa">Lake Biwa</a></li>
@@ -44,13 +41,25 @@
                 here</a>
         </p>
 
+        <label for="userInput">Enter Text:</label>
+        <input type="text" id="userInput">
+        <button onclick="storeText(),displayText()">Store Text</button>
+        <!--<button onclick="displayText()">Show Text</button>!-->
+        <ul id="textList"></ul>
+
+
+       <!--<label for="userInput">Enter Text:</label>
+        <input type="text" id="userInput" placeholder="Please enter your comment.">
+        <button onclick="displayText()">Show Text</button>
+        <p id="displayText"></p>--> 
+        <script src="./as.js">
+                storeText();
+                displayText();
+            </script>
         <form action="index.html" method="GET">
-            <label for="userInput">Enter Text:</label>
-      <input type="text" id="userInput">
-      <button onclick="displayText()">Show Text</button>
-      <p id="displayText"></p>
+
         </form>
-       
+
         <img id="uploaded-image" src alt="Uploaded Image">
 
     </body>
