@@ -12,16 +12,9 @@ function displayText() {
   textList.innerHTML = ''; // Clear the previous list
 
   for (var i = 0; i < userInputArray.length; i++) {
-    var listItem = document.createElement('li');
+    var listItem = document.createElement('div');
     listItem.textContent = userInputArray[i];
     textList.appendChild(listItem);
   }
 }
-   // function displayText() {
-      // Get the user input value
-
-    //  var userInput = document.getElementById('userInput').value;
-
-      // Display the user input
-    //  document.getElementById('displayText').textContent = userInput;
-  //  }
+   

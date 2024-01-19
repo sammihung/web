@@ -43,31 +43,15 @@
 
         <label for="userInput">Enter Text:</label>
         <input type="text" id="userInput">
-        <button onclick="storeText(),displayText()">Store Text</button>
-        <!--<button onclick="displayText()">Show Text</button>! 
-            <ul id="textList"></ul>-->
-       
-        <table border="1">
-            <tr>
-                <td  id="textList"></td>
-                
-            </tr>
-           
-        </table>
+    <div class="a1">
+        <button class="button" onclick="storeText(),displayText()">Store Text</button>
+    </div>
+    
+    <div class="list" id="textList">
+    </div>
 
-       <!--<label for="userInput">Enter Text:</label>
-        <input type="text" id="userInput" placeholder="Please enter your comment.">
-        <button onclick="displayText()">Show Text</button>
-        <p id="displayText"></p>--> 
-        <script src="./as.js">
-                storeText();
-                displayText();
-            </script>
-        <form action="index.html" method="GET">
-
-        </form>
-
-        <img id="uploaded-image" src alt="Uploaded Image">
-
+    <script src="./as.js"></script>
+    <form action="index.html" method="GET"></form>
+    <img id="uploaded-image" src alt="Uploaded Image">
     </body>
 </html>
